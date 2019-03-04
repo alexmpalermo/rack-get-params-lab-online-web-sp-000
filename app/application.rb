@@ -35,4 +35,13 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
+  
+  def handle_add(item)
+    if @@items.include?(item)
+      @@cart << item 
+      return "#{item} is now in the cart"
+    else 
+      return "Couldn't find #{item}"
+    end 
+  end 
 end
