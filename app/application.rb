@@ -38,6 +38,7 @@ class Application
     if @@cart != []
       @@cart.each do |item|
       return "#{item}\n"
+    end 
     else 
       return "Your cart is empty"
     end 
