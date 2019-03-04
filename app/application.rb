@@ -48,9 +48,9 @@ class Application
   def handle_add(item)
     if @@items.include?(item)
       @@cart << item 
-      return "#{item} is now in the cart"
+      return "added #{item}"
     else 
-      return "Couldn't find #{item}"
+      return "We don't have that item"
     end 
   end 
 end
