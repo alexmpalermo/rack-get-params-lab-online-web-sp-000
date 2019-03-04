@@ -39,10 +39,11 @@ class Application
   end
   
   def handle_cart(item)
-    if 
-      
-    else 
+    if @@cart != []
       return 
+    else 
+      return "Your cart is empty"
+    end 
   end
   
   def handle_add(item)
