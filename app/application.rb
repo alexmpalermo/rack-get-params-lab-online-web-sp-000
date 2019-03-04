@@ -40,6 +40,9 @@ class Application
   
   def handle_cart(item)
     if 
+      
+    else 
+      return 
   end
   
   def handle_add(item)
