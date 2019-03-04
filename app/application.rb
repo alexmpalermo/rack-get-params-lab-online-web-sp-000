@@ -37,7 +37,7 @@ class Application
   def handle_cart
     if @@cart != []
       @@cart.each do |item|
-      return "#{item}\n"
+      "#{item}\n"
     end 
     else 
       return "Your cart is empty"
