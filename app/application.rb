@@ -16,7 +16,9 @@ class Application
       resp.write handle_search(search_term)
     elsif req.path.match(/cart/)
       @@cart.each do |item|
-        resp.write "#{item}\n"
+        resp.write handle_cart(item)
+        
+        "#{item}\n"
       end 
     elsif req.path.match(/add/)
     item = req.params["q"]
@@ -34,6 +36,10 @@ class Application
     else
       return "Couldn't find #{search_term}"
     end
+  end
+  
+  def handle_cart(item)
+    if 
   end
   
   def handle_add(item)
